@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Get requests
 Route::get('/', 'MainController@homeView')->name('home');
 Route::get('/about', 'MainController@aboutView')->name('about');
 Route::get('/contact', 'MainController@contactView')->name('contact');
 Route::get('/offer', 'MainController@offerView')->name('offer');
 
+//Post requests
+Route::post('/offer/post', 'MainController@offerAction');
