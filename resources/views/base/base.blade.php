@@ -16,7 +16,6 @@
         <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
-  
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -42,15 +41,15 @@
                     </li>
                 </ul>
 
-                <script type="text/javascript" src="{{ asset('js/aos.js') }}"></script>
-                <script>
-                    AOS.init();
-                </script>
             </div>
         </nav>   
         <div class="content">
             @yield('body')
             
         </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>

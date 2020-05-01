@@ -1,6 +1,7 @@
 @extends('base.base')
 @section('body') 
-<h1>Home</h1>
-
+<div>
+    <h1>Talk</h1>
+</div>
 @endsection
 
