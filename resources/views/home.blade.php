@@ -25,7 +25,7 @@
             <h1>Vertalen</h1>
         </div>
         <div class="VERTAALsplitline"></div>
-        <div>
+        <div data-aos="fade-right" data-aos-duration="2000">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veritatis ea reprehenderit veniam, minima aut porro id modi nam! Enim dicta veritatis odio assumenda illo recusandae expedita tenetur quisquam architecto.</p>
         </div>
     </div>
