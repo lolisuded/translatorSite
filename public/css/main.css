@@ -1,5 +1,200 @@
+body{
+     background-color: #949494;
+}
+
 a img{
      width: 50px; 
      height: 50px;
      margin-right: 2%;
+}
+
+.brandName {
+     text-align: center;
+     color: #89afb5;
+     font-family: 'Roboto Slab', serif;
+}
+
+.brandName h1{
+     font-size: 15rem;
+}
+
+.brandSlogan {
+     text-align: center;
+     color: #89afb5;
+     font-family: 'Roboto Slab', serif;
+}
+
+.brandSlogan h3{
+     font-size: 3rem;
+     padding-left: 1rem;
+     margin-top: 2rem;
+}
+
+.BRANDsplitline{
+     width: 15rem;
+     height: 1rem;
+     background-color: #4b4ba3;
+     margin: 0 auto;
+}
+
+
+.TolkenText{
+     width: 400px;
+}
+
+.TolkenText h1{
+     text-align: left;
+     font-size: 5rem;
+}
+
+.vertalenIcon{
+     color: whitesmoke;
+     font-size: 3rem;
+}
+
+.TolkenText p{
+     font-size: 1rem;
+     margin-left: 0.5rem;
+}
+
+.TOLKsplitline{
+     width: 15rem;
+     height: 0.25rem;
+     background-color: #212529;
+     margin-left: 0.5rem;
+     margin-bottom: 1rem;
+}
+
+.VertalenText{
+     width: 400px;
+}
+
+.VertalenText h1{
+     text-align: left;
+     font-size: 5rem;
+}
+
+.VertalenText p{
+     font-size: 1rem;
+     margin-left: 0.5rem;
+}
+
+.VERTAALsplitline{
+     width: 15rem;
+     height: 0.25rem;
+     background-color: #212529;
+     margin-left: 0.5rem;
+     margin-bottom: 1rem;
+}
+
+@media (min-width:320px)  {
+     .TolkenText{
+          width: 180px;
+          padding-bottom: 15rem;
+          margin: 0 auto;
+     }
+}
+
+@media (min-width:480px)  {
+     .TolkenText{
+          width: 240px;
+          padding-bottom: 15rem;
+          margin: 0 auto;
+     }
+}
+
+@media (min-width:600px)  { 
+     .TolkenText{
+          width: 275px;
+          padding-bottom: 15rem;
+          margin: 0 auto;
+     }
+}
+
+@media (min-width:801px)  {
+     .TolkenText{
+          width: 260px;
+          padding-bottom: 15rem;
+          margin: 0 auto;
+     }
+}
+
+@media (min-width:1025px) {
+     .TolkenText{
+          width: 300px;
+          padding-bottom: 15rem;
+          margin: 0 auto;
+     }
+}
+
+@media (min-width:1281px) {
+     .TolkenText{
+          width: 400px;
+          padding-bottom: 0rem;
+          margin-left: 15%;
+          float: left;
+     }
+}
+
+@media (min-width:320px)  {
+     .VertalenText{
+          width: 180px;
+          margin: 0 auto;
+     }
+}
+
+@media (min-width:480px)  {
+     .VertalenText{
+          width: 240px;
+          margin: 0 auto;
+     }
+}
+
+@media (min-width:600px)  { 
+     .VertalenText{
+          width: 275px;
+          margin: 0 auto;
+     }
+}
+
+@media (min-width:801px)  {
+     .VertalenText{
+          width: 260px;
+          margin: 0 auto;
+     }
+}
+
+@media (min-width:1025px) {
+     .VertalenText{
+          width: 300px;
+          margin: 0 auto;
+     }
+}
+
+@media (min-width:1281px) {
+     .VertalenText{
+          width: 400px;
+          float: right;
+          margin-right: 15%;
+          margin-left: 0%;
+          margin-top: 0rem;
+     }
+}
+
+@media (max-width:600px) {
+     .brandName h1{
+          font-size: 12.5rem;
+     }
+}
+
+@media (max-width:1280px) {
+     .TolkVertaal-Container{
+          margin-top: 325px;
+     }
+}
+
+@media (min-width:1281px) {
+     .TolkVertaal-Container{
+          margin-top: 500px;
+     }
 }
