@@ -11,15 +11,23 @@
 </div>
 <div class="TolkVertaal-Container">
     <div class="TolkenText">
-        <h1>Tolk</h1>
+        <div data-aos="fade-left" data-aos-duration="2000" data-aos-anchor-placement="bottom-bottom">
+            <h1>Tolk</h1>
+        </div>
         <div class="TOLKsplitline"></div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam officia eveniet dolor commodi ex eum? Suscipit sit illum dolorem? Magnam distinctio deserunt ea. Reiciendis fuga ex est officia, odit ea.</p>
+        <div data-aos="fade-right" data-aos-duration="2000">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam officia eveniet dolor commodi ex eum? Suscipit sit illum dolorem? Magnam distinctio deserunt ea. Reiciendis fuga ex est officia, odit ea.</p>
+        </div>
     </div>
 
     <div class="VertalenText">
-        <h1>Vertalen</h1>
+        <div data-aos="fade-left" data-aos-duration="2000" data-aos-anchor-placement="bottom-bottom">
+            <h1>Vertalen</h1>
+        </div>
         <div class="VERTAALsplitline"></div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veritatis ea reprehenderit veniam, minima aut porro id modi nam! Enim dicta veritatis odio assumenda illo recusandae expedita tenetur quisquam architecto.</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veritatis ea reprehenderit veniam, minima aut porro id modi nam! Enim dicta veritatis odio assumenda illo recusandae expedita tenetur quisquam architecto.</p>
+        </div>
     </div>
 </div>
 @endsection
