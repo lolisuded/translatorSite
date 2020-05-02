@@ -42,11 +42,11 @@
     <div class="VertaalRichtingen"> 
         <div class="Arabisch-NederlandsRichting" data-aos="zoom-in" data-aos-duration="2000">
             <p>Arabisch <i class="RightArrow fas fa-long-arrow-alt-right"></i> Nederlands <i class="Richting-Check fas fa-check"></i></p>
-            <p>Arabisch <i class="LeftArrow fas fa-long-arrow-alt-left"></i> Nederlands <i class="Richting-Check fas fa-check"></i><br><br></p>
+            <p>Arabisch <i class="LeftArrow fas fa-long-arrow-alt-left"></i> Nederlands <i class="Richting-Check fas fa-check"></i><br><br><br></p>
         </div>
         <div class="Engels-ArabischRichting" data-aos="zoom-in" data-aos-duration="2000">
             <p>Engels <i class="RightArrow fas fa-long-arrow-alt-right"></i> Arabisch <i class="Richting-Check fas fa-check"></i></p>
-            <p>Engels <i class="LeftArrow fas fa-long-arrow-alt-left"></i> Arabisch <i class="Richting-Check fas fa-check"></i><br><br></p>
+            <p>Engels <i class="LeftArrow fas fa-long-arrow-alt-left"></i> Arabisch <i class="Richting-Check fas fa-check"></i><br><br><br></p>
         </div>
     </div>
 </div>
