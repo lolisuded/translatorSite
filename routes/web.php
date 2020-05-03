@@ -17,8 +17,9 @@ use Illuminate\Support\Facades\Route;
 // Get requests
 Route::get('/', 'MainController@homeView')->name('home');
 Route::get('/about', 'MainController@aboutView')->name('about');
-Route::get('/contact', 'MainController@contactView')->name('contact');
 Route::get('/offer', 'MainController@offerView')->name('offer');
+Route::get('/contact', 'MainController@contactView')->name('contact');
 
 //Post requests
 Route::post('/offer/post', 'MainController@offerAction');
+Route::post('/contact', 'ContactFormController@contactMail');
