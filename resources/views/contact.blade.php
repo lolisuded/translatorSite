@@ -25,17 +25,18 @@
 
 ?> --}}
 
+
 <h1 class="ContactTitle">Contact</h1>
 
 <div class="ContactForm">
     <form method="POST" action="/contact">
         <div class="Contactform_firstname form-group">
-            <label for="exampleInputEmail">Lastname</label>
-            <input type="text" class="form-control" id="exampleInputEmail" name="firstname" required>
+            <label>Voornaam</label>
+            <input type="text" class="form-control" name="firstname" required>
         </div>
         <div class="Contactform_lastname form-group">
-            <label for="exampleInputEmail">Achternaam</label>
-            <input type="text" class="form-control" id="exampleInputEmail" required>
+            <label>Achternaam</label>
+            <input type="text" class="form-control" name="lastname" required>
         </div>
         <div class="Contactform_email form-group">
             <label for="exampleInputEmail">Email address</label>
@@ -44,14 +45,14 @@
         </div>
         <div class="Contactform_msg form-group">
             <label for="exampleInputEmail">Uw Bericht!</label>
-            <textarea class="form-control" id="exampleInputEmail" name="msg" required></textarea>
+            <textarea class="form-control" name="msg" required></textarea>
         </div>
         <div class="Contactform_captcha form-group">
-            <div class="g-recaptcha" id="exampleInputEmail" data-sitekey="6Le86PEUAAAAAFyJoZQth11xw4BFnasS_h0mw0jr" aria-required="true"></div>
+            <div class="g-recaptcha" data-sitekey="6Le86PEUAAAAAFyJoZQth11xw4BFnasS_h0mw0jr" aria-required="true"></div>
         </div>
         @csrf
         <div class="Contactform_submit form-group">
-            <button type="submit" id="exampleInputEmail" name="submitcontact_form" class="btn btn-primary text-white">Verstuur</a></button>
+            <button type="submit" name="submitcontact_form" class="btn btn-primary text-white">Verstuur</a></button>
         </div>
     </form>
 </div>

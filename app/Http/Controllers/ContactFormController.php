@@ -24,6 +24,8 @@ class ContactFormController extends Controller
         // Sends the E-mail
 
         Mail::to('test@test.com')->send(new ContactFormMail($data));
+
+        return back()->with('success','Bericht Succesvol Verstuurd!');
     }
     
 }

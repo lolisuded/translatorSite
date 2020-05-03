@@ -44,6 +44,10 @@
 
             </div>
         </nav>   
+        @include('flash-message')
+
+
+        @yield('content')
         <div class="content">
             @yield('body')
             
