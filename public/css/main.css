@@ -47,11 +47,6 @@ a img{
      font-size: 5rem;
 }
 
-.vertalenIcon{
-     color: whitesmoke;
-     font-size: 3rem;
-}
-
 .TolkenText p{
      font-size: 1rem;
      margin-left: 0.5rem;
@@ -85,6 +80,57 @@ a img{
      background-color: #212529;
      margin-left: 0.5rem;
      margin-bottom: 1rem;
+}
+
+.VertaalTalenText{
+     width: 550px;
+     margin: 0 auto;
+}
+
+.VertaalTalenText h1{
+     text-align: center;
+     font-size: 4.25rem;
+}
+
+.VertaalTalenText p{
+     font-size: 1rem;
+     margin-left: 0.5rem;
+     text-align: center;
+     margin-top: 1rem;
+}
+
+.TALENsplitline{
+     width: 95%;
+     height: 0.25rem;
+     background-color: #212529;
+     margin-left: 0.5rem;
+     margin: 0 auto;
+}
+
+.VertaalRichtingen{
+     margin-top: 7rem;
+}
+
+.Arabisch-NederlandsRichting{
+     float: left;
+     margin-left: 10%;
+}
+
+.Engels-ArabischRichting{
+     float: right;
+     margin-right: 10%;
+}
+
+.RightArrow{
+     color: whitesmoke;
+}
+
+.LeftArrow{
+     color: whitesmoke;
+}
+
+.Richting-Check{
+     color: greenyellow;
 }
 
 @media (min-width:320px)  {
@@ -196,5 +242,89 @@ a img{
 @media (min-width:1281px) {
      .TolkVertaal-Container{
           margin-top: 500px;
+     }
+}
+
+@media (min-width:320px)  {
+     .VertaalTalenText{
+          width: 275px;
+          padding-top: 300px;
+          
+     }
+}
+
+@media (min-width:480px)  {
+     .VertaalTalenText{
+          width: 300px;
+          padding-top: 300px;
+          
+     }
+}
+
+@media (min-width:600px)  { 
+     .VertaalTalenText{
+          width: 350px;
+          padding-top: 300px;
+          
+     }
+}
+
+@media (min-width:801px)  {
+     .VertaalTalenText{
+          width: 375px;
+          padding-top: 300px;
+         
+     }
+}
+
+@media (min-width:1025px) {
+     .VertaalTalenText{
+          width: 500px;
+          padding-top: 300px;
+          
+     }
+}
+
+@media (min-width:1281px) {
+     .VertaalTalenText{
+          width: 550px;
+          padding-top: 450px;
+          
+     }
+}
+
+@media (max-width:670px) {
+     .Arabisch-NederlandsRichting{
+          font-size: 16px;
+     }
+}
+
+@media (min-width:671px) {
+     .Arabisch-NederlandsRichting{
+          font-size: 22px;
+     }
+}
+
+@media (min-width:940px) {
+     .Arabisch-NederlandsRichting{
+          font-size: 28px;
+     }
+}
+
+@media (max-width:670px) {
+     .Engels-ArabischRichting{
+          font-size: 16px;
+     }
+}
+
+@media (min-width:671px) {
+     .Engels-ArabischRichting{
+          font-size: 22px;
+     }
+}
+
+@media (min-width:940px) {
+     .Engels-ArabischRichting{
+          font-size: 28px;
      }
 }
