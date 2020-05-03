@@ -1,12 +1,22 @@
 @component('mail::message')
-# Introduction
+# Bedankt voor uw bericht!
 
-The body of your message.
+Wij zullen hier zo snel mogelijk op reageren.
 
-@component('mail::button', ['url' => ''])
-Button Text
+
+<strong>Voornaam:</strong> {{ $data['firstname'] }}
+<strong>Achternaam:</strong> {{ $data['lastname'] }}
+
+<strong>E-mail:</strong> {{ $data['email'] }}
+
+<strong>Bericht:</strong> 
+
+{{ $data['msg'] }}
+
+@component('mail::button', ['url' => 'mamasite.nl'])
+Terug naar Website!
 @endcomponent
 
-Thanks,<br>
-{{ config('app.name') }}
+Bedankt!,<br>
+Talk
 @endcomponent

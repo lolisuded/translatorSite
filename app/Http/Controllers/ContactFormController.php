@@ -15,9 +15,15 @@ class ContactFormController extends Controller
 
     public function contactMail()
     {
+        $data = request()->validate([
+            'firstname' => 'required',
+            'lastname' => 'required',
+            'email' => 'required',
+            'msg' => 'required', 
+        ]);
         // Sends the E-mail
 
-        Mail::to('test@test.com')->send(new ContactFormMail());
+        Mail::to('test@test.com')->send(new ContactFormMail($data));
     }
     
 }
