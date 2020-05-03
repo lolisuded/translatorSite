@@ -25,16 +25,35 @@
 
 ?> --}}
 
-<h1>Contact</h1>
+<h1 class="ContactTitle">Contact</h1>
 
-<form method="POST" action="/contact">
-    <input type="text" placeholder="Voornaam" name="firstname" required>
-    <input type="text" placeholder="Achternaam" name="lastname" required>
-    <input type="email" placeholder="E-mail" name="email" required>
-    <textarea placeholder="Uw bericht!" name="msg" required></textarea>
-    <div class="g-recaptcha" data-sitekey="6Le86PEUAAAAAFyJoZQth11xw4BFnasS_h0mw0jr" aria-required="true"></div>
-    @csrf
-    <button type="submit" name="submitcontact_form" class="btn btn-primary text-white">Verstuur</a>
-</form>
+<div class="ContactForm">
+    <form method="POST" action="/contact">
+        <div class="Contactform_firstname form-group">
+            <label for="exampleInputEmail">Lastname</label>
+            <input type="text" class="form-control" id="exampleInputEmail" name="firstname" required>
+        </div>
+        <div class="Contactform_lastname form-group">
+            <label for="exampleInputEmail">Achternaam</label>
+            <input type="text" class="form-control" id="exampleInputEmail" required>
+        </div>
+        <div class="Contactform_email form-group">
+            <label for="exampleInputEmail">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail aria-describedby="emailDisclaimer" name="email" required>
+            <small id="emailDisclaimer" class="emailDisclaimer form-text">Wij zullen nooit uw gegevens delen.</small>
+        </div>
+        <div class="Contactform_msg form-group">
+            <label for="exampleInputEmail">Uw Bericht!</label>
+            <textarea class="form-control" id="exampleInputEmail" name="msg" required></textarea>
+        </div>
+        <div class="Contactform_captcha form-group">
+            <div class="g-recaptcha" id="exampleInputEmail" data-sitekey="6Le86PEUAAAAAFyJoZQth11xw4BFnasS_h0mw0jr" aria-required="true"></div>
+        </div>
+        @csrf
+        <div class="Contactform_submit form-group">
+            <button type="submit" id="exampleInputEmail" name="submitcontact_form" class="btn btn-primary text-white">Verstuur</a></button>
+        </div>
+    </form>
+</div>
 
 @endsection
