@@ -26,9 +26,9 @@
 ?> --}}
 
 
-<h1 class="ContactTitle">Contact</h1>
+<h1 class="ContactTitle" data-aos="zoom-in" data-aos-duration="2000">Contact</h1>
 
-<div class="ContactForm">
+<div class="ContactForm" data-aos="fade-left" data-aos-duration="2000">
     <form method="POST" action="/contact">
         <div class="Contactform_firstname form-group">
             <label>Voornaam</label>
