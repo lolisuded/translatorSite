@@ -1,7 +1,7 @@
 @extends('base.base')
 @section('body') 
 
-@if ($errors->any())
+@if ($errors->has('g-recaptcha-response'))
 <div class="alert alert-danger alert-block" data-aos="fade-down" data-aos-duration="2000">
 	<button type="button" class="close" data-dismiss="alert">×</button>	
         <strong>Please Complete The CAPTCHA.</strong>

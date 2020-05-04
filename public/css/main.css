@@ -145,6 +145,17 @@ a img{
      width: 475px;
 }
 
+.OfferTitle{
+     font-size: 5rem;
+     margin-left: 10%;
+     padding-bottom: 5rem;
+     margin-top: 2.5rem;
+}
+
+.OfferForm{
+     margin-left: 10%;
+}
+
 
 @media (min-width:320px)  {
      .TolkenText{
@@ -394,3 +405,14 @@ a img{
      }
 }
 
+@media (max-width:767px) {
+     .OfferForm{
+          width: 400px;
+     }
+}
+
+@media (min-width:768px) {
+     .OfferForm{
+          width: 1500px;
+     }
+}

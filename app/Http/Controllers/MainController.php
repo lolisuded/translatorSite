@@ -34,9 +34,13 @@ class MainController extends Controller {
                 'lastname' => 'required|max:255',
                 'email' => 'required|email',
                 'telnumber' => 'required|numeric',
+                'msg' => 'required',
                 'g-recaptcha-response' => ['required', new ValidRecaptcha()]
             ]);
         }
+
+        // Redirects back with Success message.
+        return back()->with('success','Bericht Succesvol Verstuurd!');
     }
 
 

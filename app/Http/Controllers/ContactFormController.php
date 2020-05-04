@@ -17,9 +17,9 @@ class ContactFormController extends Controller
     public function contactMail()
     {
         $data = request()->validate([
-            'firstname' => 'required',
-            'lastname' => 'required',
-            'email' => 'required',
+            'firstname' => 'required|max:255',
+            'lastname' => 'required|max:255',
+            'email' => 'required|email',
             'msg' => 'required', 
             'g-recaptcha-response' => ['required', new ValidRecaptcha()]
         ]);
