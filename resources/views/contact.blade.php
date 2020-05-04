@@ -1,16 +1,14 @@
 @extends('base.base')
 @section('body') 
 
-<h1 class="ContactTitle" data-aos="zoom-in" data-aos-duration="2000">Contact</h1>
-
 @if ($errors->any())
-    <div class="ErrorContactForm alert alert-danger alert-dismissible fade show" data-aos="fade-left" data-aos-duration="2000" role="alert">
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-    </button>
-        <p>Please complete the CAPTCHA.</p>
-    </div>
+<div class="alert alert-danger alert-block" data-aos="fade-down" data-aos-duration="2000">
+	<button type="button" class="close" data-dismiss="alert">×</button>	
+        <strong>Please Complete The CAPTCHA.</strong>
+</div>
 @endif
+
+<h1 class="ContactTitle" data-aos="zoom-in" data-aos-duration="2000">Contact</h1>
 
 <div class="ContactForm" data-aos="fade-left" data-aos-duration="2000">
     <form method="POST" action="/contact">
