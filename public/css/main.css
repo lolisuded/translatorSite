@@ -1,5 +1,6 @@
 body{
      background-color: #949494;
+     padding-bottom: 200px;
 }
 
 a img{
@@ -154,6 +155,16 @@ a img{
 
 .OfferForm{
      margin-left: 10%;
+}
+
+#BackToTopbtn{
+     position: fixed;
+     bottom: 40px;
+     right: 40px;
+     border-radius: 50%;
+     font-size: 2.25rem;
+     width: 70px;
+     display: none;
 }
 
 
@@ -416,3 +427,5 @@ a img{
           width: 1500px;
      }
 }
+
+

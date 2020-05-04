@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="{{ asset('css/main.css') }}"/>
         <link rel="stylesheet" href="{{ asset('css/aos.css') }}"/>
         <link rel="stylesheet" href="{{ asset('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@383&display=swap') }}"/>
+        <link rel="stylesheet" href="{{ asset('css/font-awesome-animation.min.css') }}">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -38,8 +39,10 @@
 
             </div>
         </nav>
-        @include('flash-message')
 
+        <div class="btn btn-primary faa-parent animated-hover" id="BackToTopbtn"><i class="UpIcon fas fa-chevron-up faa-float faa-fast"></i></div>
+        @include('flash-message')
+        
 
         @yield('content')
         <div class="content">
@@ -53,6 +56,7 @@
         <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
         <script src="{{ asset('js/aos.js') }}"></script>
         <script src="{{ asset('js/recaptcha.js') }}" async defer></script>
+        
         <script>
           AOS.init();
         </script>
