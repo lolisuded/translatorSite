@@ -41,4 +41,6 @@
     </form>
 </div>
 
+<iframe class="GoogleMapsLocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.4018800853337!2d5.011365815942726!3d52.145200771689375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c671bf63154f81%3A0xb96dbfc0ffc6e2d7!2sTolk-%20en%20vertaalbureau%20TALK!5e0!3m2!1snl!2snl!4v1588633084790!5m2!1snl!2snl"></iframe>
+
 @endsection
