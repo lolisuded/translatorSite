@@ -3,7 +3,7 @@
 
 @if ($errors->has('g-recaptcha-response'))
 <div class="alert alert-danger alert-block" data-aos="fade-down" data-aos-duration="2000">
-	<button type="button" class="close" data-dismiss="alert">×</button>	
+	<button type="button" class="close" data-dismiss="alert">×</button>
         <strong>Please Complete The CAPTCHA.</strong>
 </div>
 @endif
@@ -51,6 +51,35 @@
                 <div class="input-group-text">Telefoonummer</div>
             </div>
             <input type="text" class="form-control" id="telnumber" placeholder="" name="telnumber" required>
+        </div>
+    </div>
+
+    <div class="ml-2 form-row">
+        <div class="col-md-3 mb-3">
+            <label class="sr-only" for="service">Dienst</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Dienst</div>
+                </div>
+                <select class="form-control" id="service" name="service[]" required>
+                    <option value="1">Vertalen</option>
+                    <option value="2">Tolk</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label class="sr-only" for="language">Taal</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Taal</div>
+                </div>
+                <select class="form-control" id="language" name="language[]" required>
+                    <option value="1">Nederlands > Engels</option>
+                    <option value="2">Engels > Nederlands</option>
+                    <option value="3">Nederlands > Arabisch</option>
+                    <option value="4">Arabisch > Nederlands</option>
+                </select>
+            </div>
         </div>
     </div>
 
