@@ -1,7 +1,8 @@
-<?php 
+<?php
 
 namespace App\Http\Controllers;
 
+use App\Rules\ValidRecaptcha;
 use Illuminate\Http\Request;
 
 class MainController extends Controller {
@@ -22,34 +23,22 @@ class MainController extends Controller {
     /**
      * Handle an incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param Request $request
      * @return mixed
      */
     public function offerAction(Request $request) {
         if ($request->method() === "POST"){
-            $data = array();
 
-            $firstname = $request->input('firstname');
-            $lastname = $request->input('lastname');
-            $email = $request->input('email');
-            $telnumber = $request->input('telnumber');
-            $msg = $request->input('msg');
-
-            if (! is_int($telnumber)) {
-                dd('érror worng number');
-            }
-            
-            $data = [
-                'firstname' => $firstname,
-                'lastname' => $lastname,
-                'email' => $email,
-                'telnumber' => $telnumber,
-                'msg' => $msg
-            ];
-
-            dump($data);
+            $validateData = $request->validate([
+                'firstname' => 'required|max:255',
+                'lastname' => 'required|max:255',
+                'email' => 'required|email',
+                'telnumber' => 'required|numeric',
+                'g-recaptcha-response' => ['required', new ValidRecaptcha()]
+            ]);
         }
     }
+
 
     public function contactView() {
         return view('contact');
