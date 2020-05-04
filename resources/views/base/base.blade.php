@@ -6,11 +6,11 @@
         <title>Talk</title>
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/all.css') }}"></link>
-        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}"></link>
-        <link rel="stylesheet" href="{{ asset('css/main.css') }}"></link>
-        <link rel="stylesheet" href="{{ asset('css/aos.css') }}"></link>
-        <link rel="stylesheet" href="{{ asset('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@383&display=swap') }}"></link>
+        <link rel="stylesheet" href="{{ asset('css/all.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('css/main.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('css/aos.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@383&display=swap') }}"/>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -37,7 +37,7 @@
                 </ul>
 
             </div>
-        </nav>   
+        </nav>
         @include('flash-message')
 
 
@@ -51,8 +51,8 @@
         <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="{{ asset('js/aos.js') }}"></script>
+        <script src="{{ asset('js/recaptcha.js') }}" async defer></script>
         <script>
           AOS.init();
         </script>
