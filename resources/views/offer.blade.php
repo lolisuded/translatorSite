@@ -58,10 +58,13 @@
     </div>
 
     <div class="form-group">
-        <div class="ml-3 g-recaptcha{{ $errors->has('g-recaptcha-response') ? 'alert alert-danger' : '' }}"
+        <div class="ml-3 g-recaptcha"
              data-sitekey="{{ env('GOOGLE_RECAPTCHA_SITE_KEY') }}">
         </div>
-        <small class="ml-3 {{$errors->has('g-recaptcha-response') ? 'alert alert-danger' : '' }}" role="alert">{{ $errors->first('g-recaptcha-response') }}</small>
+
+        @if($errors->has('g-recaptcha-response'))
+            <small class="mt-3 ml-3 alert alert-danger" role="alert">{{ $errors->first('g-recaptcha-response') }}</small>
+        @endif
     </div>
     <button type="submit" class="ml-3 btn btn-primary text-white">Verstuur</button>
 </form>

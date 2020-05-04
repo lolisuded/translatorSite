@@ -11,11 +11,6 @@
         <link rel="stylesheet" href="{{ asset('css/main.css') }}"></link>
         <link rel="stylesheet" href="{{ asset('css/aos.css') }}"></link>
         <link rel="stylesheet" href="{{ asset('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@383&display=swap') }}"></link>
-
-        <!-- Script -->
-        <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -47,10 +42,15 @@
             @yield('body')
 
         </div>
+
+        <!-- Script -->
+        <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <script>
           AOS.init();
         </script>
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </body>
 </html>
