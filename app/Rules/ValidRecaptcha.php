@@ -9,7 +9,7 @@ class ValidRecaptcha implements Rule
 {
 
     Const GOOGLE_CAPTCHA_API_LINK = "https://google.com/recaptcha/api/";
-    private $client;
+    private Client $client;
 
     /**
      * Create a new rule instance.

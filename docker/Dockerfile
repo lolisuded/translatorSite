@@ -1,4 +1,4 @@
-FROM php:7.3-fpm-alpine
+FROM php:7.4-fpm-alpine
 
 # Define timezone
 ENV TZ=Europe/Amsterdam
