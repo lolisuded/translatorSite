@@ -1,32 +1,16 @@
 @extends('base.base')
 @section('body') 
 
-{{-- <?php
-
-    // $private_key = '6Le86PEUAAAAAL9pbBIHM0gGstLNKcJy0xgSpZ6A';
-    // $Googleapi_url = 'https://www.google.com/recaptcha/api/siteverify';
-
-    // if(array_key_exists('submitcontact_form',$_POST)) 
-    // {
-    //     $response_key = $_POST['g-recaptcha-response'];
-    //     $reCAPTCHA_response = file_get_contents($Googleapi_url.'?secret='.$private_key.'&response='.$response_key.'&remoteip='.$_SERVER['REMOTE_ADDR']);
-    //     $reCAPTCHA_response = json_decode($reCAPTCHA_response);
-
-        
-
-    //     if($reCAPTCHA_response->succes == 1) 
-    //     {
-    //     }
-    //     else 
-    //     {
-    //         echo 'Please check the CAPTCHA';
-    //     }
-    // }
-
-?> --}}
-
-
 <h1 class="ContactTitle" data-aos="zoom-in" data-aos-duration="2000">Contact</h1>
+
+@if ($errors->any())
+    <div class="ErrorContactForm alert alert-danger alert-dismissible fade show" data-aos="fade-left" data-aos-duration="2000" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+    </button>
+        <p>Please complete the CAPTCHA.</p>
+    </div>
+@endif
 
 <div class="ContactForm" data-aos="fade-left" data-aos-duration="2000">
     <form method="POST" action="/contact">
@@ -48,7 +32,9 @@
             <textarea class="form-control" name="msg" required></textarea>
         </div>
         <div class="Contactform_captcha form-group">
-            <div class="g-recaptcha" data-sitekey="6Le86PEUAAAAAFyJoZQth11xw4BFnasS_h0mw0jr" aria-required="true"></div>
+            <div class="g-recaptcha" 
+                data-sitekey="{{ env('GOOGLE_RECAPTCHA_SITE_KEY') }}">
+            </div>
         </div>
         @csrf
         <div class="Contactform_submit form-group">
