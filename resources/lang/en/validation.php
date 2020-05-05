@@ -129,11 +129,11 @@ return [
     |
     */
 
-    'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
-        ],
-    ],
+//    'custom' => [
+//        'email' => [
+//            'required' => 'E-mail address is required.',
+//        ],
+//    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -146,6 +146,11 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'email' => 'e-mail address',
+        'telnumber' => 'phone number',
+        'msg' => 'message',
+        'g-recaptcha-response' => 'Captcha'
+    ],
 
 ];

@@ -1,11 +1,13 @@
 @extends('base.base')
 @section('body')
 
-@if ($errors->has('g-recaptcha-response'))
-<div class="alert alert-danger alert-block" data-aos="fade-down" data-aos-duration="2000">
-	<button type="button" class="close" data-dismiss="alert">×</button>
-        <strong>Please Complete The CAPTCHA.</strong>
-</div>
+@if($errors->any())
+    @foreach($errors->all() as $message)
+        <div class="alert alert-danger alert-block" data-aos="fade-down" data-aos-duration="2000">
+            <button type="button" class="close" data-dismiss="alert"><i class="text-danger fas fa-times-circle"></i></button>
+            <strong>{{$message}}</strong>
+        </div>
+    @endforeach
 @endif
 
 <h1 class="OfferTitle" data-aos="zoom-in" data-aos-duration="2000">Offerte</h1>

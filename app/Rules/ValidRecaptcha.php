@@ -48,6 +48,6 @@ class ValidRecaptcha implements Rule
      */
     public function message()
     {
-        return 'Incorrect ReCaptcha.';
+        return 'Incorrect Captcha.';
     }
 }

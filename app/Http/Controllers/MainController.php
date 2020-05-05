@@ -36,7 +36,7 @@ class MainController extends Controller {
                 'service' => 'required',
                 'language' => 'required',
                 'msg' => 'required',
-                'g-recaptcha-response' => ['required', new ValidRecaptcha()]
+                'g-recaptcha-response' => ['required', 'string', new ValidRecaptcha]
             ]);
 
             dd($validateData);
