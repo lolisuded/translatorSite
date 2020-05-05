@@ -21,7 +21,7 @@ class ContactFormController extends Controller
             'lastname' => 'required|max:255',
             'email' => 'required|email',
             'msg' => 'required', 
-            'g-recaptcha-response' => ['required', new ValidRecaptcha()]
+            'g-recaptcha-response' => ['required', 'string', new ValidRecaptcha]
         ]);
         
         // Sends the E-mail
