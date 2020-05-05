@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Offer;
 use App\Rules\ValidRecaptcha;
 use Illuminate\Http\Request;
 
@@ -19,7 +20,6 @@ class MainController extends Controller {
         return view('offer');
     }
 
-
     /**
      * Handle an incoming request.
      *
@@ -27,8 +27,8 @@ class MainController extends Controller {
      * @return mixed
      */
     public function offerAction(Request $request) {
-        if ($request->method() === "POST"){
-            $validateData = $request->validate([
+        if ($request->isMethod('post')){
+            $validatedData = $request->validate([
                 'firstname' => 'required|max:255',
                 'lastname' => 'required|max:255',
                 'email' => 'required|email',
@@ -39,13 +39,23 @@ class MainController extends Controller {
                 'g-recaptcha-response' => ['required', 'string', new ValidRecaptcha]
             ]);
 
-            dd($validateData);
+            if ($validatedData) {
+                $offer = new Offer();
+                $offer->setFirstname($validatedData['firstname']);
+                $offer->setLastname($validatedData['lastname']);
+                $offer->setEmail($validatedData['email']);
+                $offer->setTelnumber($validatedData['telnumber']);
+                $offer->setService($validatedData['service'][0]);
+                $offer->setLanguage($validatedData['language'][0]);
+                $offer->setMsg($validatedData['msg']);
+
+                $offer->save();
+            }
         }
-        die();
+
         // Redirects back with Success message.
         return back()->with('success','Bericht Succesvol Verstuurd!');
     }
-
 
     public function contactView() {
         return view('contact');

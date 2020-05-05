@@ -6,29 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Offer extends Model
 {
-    private int $id;
-    private string $firstname;
-    private string $lastname;
-    private string $email;
-    private string $telnumber;
-    private string $service;
-    private string $language;
-    private string $msg;
+    protected $fillable = ['firstname', 'lastname', 'email', 'telnumber', 'service_id', 'language_id', 'message'];
 
     /**
      * @return int
      */
     public function getId(): int
     {
-        return $this->id;
-    }
-
-    /**
-     * @param int $id
-     */
-    public function setId(int $id): void
-    {
-        $this->id = $id;
+        return $this->getAttribute('id');
     }
 
     /**
@@ -36,7 +21,7 @@ class Offer extends Model
      */
     public function getFirstname(): string
     {
-        return $this->firstname;
+        return $this->getAttribute('firstname');
     }
 
     /**
@@ -44,7 +29,7 @@ class Offer extends Model
      */
     public function setFirstname(string $firstname): void
     {
-        $this->firstname = $firstname;
+        $this->attributes['firstname'] = $firstname;
     }
 
     /**
@@ -52,7 +37,7 @@ class Offer extends Model
      */
     public function getLastname(): string
     {
-        return $this->lastname;
+        return $this->getAttribute('lastname');
     }
 
     /**
@@ -60,7 +45,7 @@ class Offer extends Model
      */
     public function setLastname(string $lastname): void
     {
-        $this->lastname = $lastname;
+        $this->attributes['lastname'] = $lastname;
     }
 
     /**
@@ -68,7 +53,7 @@ class Offer extends Model
      */
     public function getEmail(): string
     {
-        return $this->email;
+        return $this->getAttribute('email');
     }
 
     /**
@@ -76,7 +61,7 @@ class Offer extends Model
      */
     public function setEmail(string $email): void
     {
-        $this->email = $email;
+        $this->attributes['email'] = $email;
     }
 
     /**
@@ -84,7 +69,7 @@ class Offer extends Model
      */
     public function getTelnumber(): string
     {
-        return $this->telnumber;
+        return $this->getAttribute('telnumber');
     }
 
     /**
@@ -92,7 +77,7 @@ class Offer extends Model
      */
     public function setTelnumber(string $telnumber): void
     {
-        $this->telnumber = $telnumber;
+        $this->attributes['telnumber'] = $telnumber;
     }
 
     /**
@@ -100,7 +85,7 @@ class Offer extends Model
      */
     public function getService(): string
     {
-        return $this->service;
+        return $this->getAttribute('service_id');
     }
 
     /**
@@ -108,7 +93,7 @@ class Offer extends Model
      */
     public function setService(string $service): void
     {
-        $this->service = $service;
+        $this->attributes['service_id'] = $service;
     }
 
     /**
@@ -116,7 +101,7 @@ class Offer extends Model
      */
     public function getLanguage(): string
     {
-        return $this->language;
+        return $this->getAttribute('language_id');
     }
 
     /**
@@ -124,7 +109,7 @@ class Offer extends Model
      */
     public function setLanguage(string $language): void
     {
-        $this->language = $language;
+        $this->attributes['language_id'] = $language;
     }
 
     /**
@@ -132,7 +117,7 @@ class Offer extends Model
      */
     public function getMsg(): string
     {
-        return $this->msg;
+        return $this->getAttribute('message');
     }
 
     /**
@@ -140,7 +125,7 @@ class Offer extends Model
      */
     public function setMsg(string $msg): void
     {
-        $this->msg = $msg;
+        $this->attributes['message'] = $msg;
     }
 
 }

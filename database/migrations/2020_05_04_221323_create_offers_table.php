@@ -14,7 +14,7 @@ class CreateOffersTable extends Migration
     public function up()
     {
         Schema::create('offers', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->string('firstname');
             $table->string('lastname');
             $table->foreignId('service_id')->references('id')->on('services');
