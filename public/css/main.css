@@ -4,6 +4,10 @@ body{
      font-family: 'Roboto Slab', serif;
 }
 
+.BottomSpace{
+     padding-bottom: 100px;
+}
+
 a img{
      width: 50px; 
      height: 50px;
@@ -179,9 +183,6 @@ a img{
 
 .AboutText{
      width: 400px;
-     margin-left: 25%;
-     float: left;
-     margin-top: 200px;
 }
 
 .AboutText h1{
@@ -193,17 +194,8 @@ a img{
      font-size: 1rem;
 }
 
-.AnwarPhoto img{
-     width: 490px;
-     height: 520px;
-}
-
 .AnwarPhoto{
-     width: 490px;
-     height: 520px;
-     float: right;
      margin-top: 200px;
-     margin-right: 25%;
 }
 
 .Aboutsplitline{
@@ -214,6 +206,12 @@ a img{
      margin-top: 1rem;
 }
 
+.AnwarPhoto img{
+     width: 490px;
+     height: 520px;
+     display: block;
+     margin: 0 auto;
+}
 
 @media (min-width:320px)  {
      .TolkenText{
@@ -475,4 +473,40 @@ a img{
      }
 }
 
+@media (min-width:1800px) {
+     .AboutText{
+          margin-left: 25%;
+          float: left;
+          margin-top: 200px;
+     }
+}
+
+@media (max-width:1799px) {
+     .AboutText{
+          margin: 0 auto;
+          margin-top: 200px;
+     }
+}
+
+@media (min-width:1800px) {
+     .AnwarPhoto{
+          margin-right: 25%;
+          float: right;
+          margin-top: 200px;
+     }
+}
+
+@media (max-width:1799px) {
+     .AnwarPhoto{
+          margin: 0 auto;
+          margin-top: 200px;
+     }
+}
+
+@media (max-width:1799px) {
+     .AnwarPhoto img{
+          width: 400px;
+          height: 430px;
+     }
+}
 

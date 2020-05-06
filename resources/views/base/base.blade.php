@@ -50,6 +50,8 @@
 
         </div>
 
+        <div class="BottomSpace"></div>
+
         <!-- Script -->
         <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
