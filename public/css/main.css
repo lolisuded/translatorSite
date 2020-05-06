@@ -1,6 +1,7 @@
 body{
      background-color: #949494;
      padding-bottom: 200px;
+     font-family: 'Roboto Slab', serif;
 }
 
 a img{
@@ -136,6 +137,7 @@ a img{
 
 
 .ContactTitle{
+     font-size: 5rem;
      text-align: center;
      margin-top: 100px;
 }
@@ -172,6 +174,44 @@ a img{
      width: 100%;
      height: 550px;
      margin-top: 150px;
+}
+
+
+.AboutText{
+     width: 400px;
+     margin-left: 25%;
+     float: left;
+     margin-top: 200px;
+}
+
+.AboutText h1{
+     font-size: 5rem;
+     margin-top: 2.5rem;
+}
+
+.AboutText p{
+     font-size: 1rem;
+}
+
+.AnwarPhoto img{
+     width: 490px;
+     height: 520px;
+}
+
+.AnwarPhoto{
+     width: 490px;
+     height: 520px;
+     float: right;
+     margin-top: 200px;
+     margin-right: 25%;
+}
+
+.Aboutsplitline{
+     width: 20rem;
+     height: 0.25rem;
+     background-color: #212529;
+     margin-bottom: 1rem;
+     margin-top: 1rem;
 }
 
 
