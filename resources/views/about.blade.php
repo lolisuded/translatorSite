@@ -1,7 +1,7 @@
 @extends('base.base')
 @section('body') 
 
-<div class="About-container">
+<div class="About-container" data-aos="zoom-in" data-aos-duration="2000">
     <div class="AboutText">
         <h1 class="AboutTitle">Over mij</h1>
         <div class="Aboutsplitline"></div>
