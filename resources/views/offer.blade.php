@@ -76,8 +76,8 @@
                     <div class="input-group-text">Taal</div>
                 </div>
                 <select class="form-control" id="language" name="language[]" required>
-                    <option value="1">Nederlands > Engels</option>
-                    <option value="2">Engels > Nederlands</option>
+                    <option value="1">Arabisch > Engels</option>
+                    <option value="2">Engels > Arabisch</option>
                     <option value="3">Nederlands > Arabisch</option>
                     <option value="4">Arabisch > Nederlands</option>
                 </select>
